@@ -54,6 +54,9 @@ We can see the details of the pipeline in the endpoints section.![Pipeline Endpo
 In the below screenshot we can see the pipeline is running
 ![Pipeline Running](images/pipeline_running.PNG)
 
+Run widget gives us information related to the pipeline run status. Through this, you can track the process of the pipelines from the notebook without having to naviagate to the azure studio.
+![Pipeline run widget complete](images/pipeline_endpoint_run_widget.png)
+
 Finally, we can see the details about the completed pipeline along with other details such as rest endpoints
 ![Pipeline Endpoint](images/pipeline_endpoint_2.PNG)
 
