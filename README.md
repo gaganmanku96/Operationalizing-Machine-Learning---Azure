@@ -26,10 +26,7 @@ The next step was to deploy the best model which was VotingEnsemble.
 ![Deploy Voting Ensemble](images/deployment_successful_2.PNG)
 
 ### 3. Enable Logging
-The best performing model was deployed using Azure Container Instance (ACI) and authentication was enabled while deploying. We also enabled Application Insights using logs.py file
-![]()
-
-In the following screenshot we can see application insights is enabled and we also have a url.
+The best performing model was deployed using Azure Container Instance (ACI) and authentication was enabled while deploying. We also enabled Application Insights using logs.py file. Application Insights are disabled before executing logs.py.
 ![Application Insights](images/insights.PNG)
 
 We can also check the logs after running the logs.py file
@@ -58,7 +55,7 @@ In the below screenshot we can see the pipeline is running
 ![Pipeline Running](images/pipeline_running.PNG)
 
 Finally, we can see the details about the completed pipeline along with other details such as rest endpoints
-![Pipeline Endpoint](images/pipeline_endpoints_2.PNG)
+![Pipeline Endpoint](images/pipeline_endpoint_2.PNG)
 
 
 ## Screen Recording
