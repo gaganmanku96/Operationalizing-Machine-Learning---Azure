@@ -1,1 +1,63 @@
+# Operationalizing Machine Learning
 
+## Architectural Diagram
+![Architectural Diagram](images/architecture.PNG)
+
+## Key Steps
+
+### 1. AutoML Experiment
+Uploading the Bank Marketing Dataset in Azure
+![Bank Marketing Dataset](images/dataset.PNG)
+
+Next, we ran AutoML on the Bank Dataset. It took around 22min to train various models.
+![AutoML Run Completion](images/completed_run.PNG)
+
+Finally, we found the best model. The list is sorted in descending order in terms of accuracy.
+![All Models](images/all_models.PNG)
+
+VotingEnsemble was the best performing model with an accuracy of 91.92%.
+![Model with best accuracy](images/best_model.PNG)
+
+### 2. Model Deployment
+The next step was to deploy the best model which was VotingEnsemble.
+![Deploy Voting Ensemble](images/deployment_successful.PNG)
+![Deploy Voting Ensemble](images/deployment_successful_2.PNG)
+
+### 3. Enable Logging
+The best performing model was deployed using Azure Container Instance (ACI) and authentication was enabled while deploying. We also enabled Application Insights using logs.py file
+![]()
+
+In the following screenshot we can see application insights is enabled and we also have a url.
+![Application Insights](images/insights.PNG)
+
+We can also check the logs after running the logs.py file
+![Logs](images/insights_2.PNG)
+![Logs](images/insights_3.PNG)
+
+### 4. Swagger
+We'll use the serve.py file to serve json file which contains the schema of the REST API through which the model can be called. We have downloaded the swagger.json file from the deployed model.
+![Swagger UI](images/swagger_ui.PNG)
+
+
+Calling the REST API from Swagger
+![Swagger POST request](images/swagger_response.PNG)
+
+### 5. Model Endpoint
+After the model has been deployed, we'll use the endpoints.py file to send request to the REST API.
+![Model Endpoint](images/end_point.PNG)
+
+### 6. Create, Publish and Consume AzureML Pipeline
+Below is the screenshot that confirms that the AzureML Pipeline was completed the execution successfully.
+![Pipeline executed successfully](images/pipeline_completed_2.PNG)
+
+We can see the details of the pipeline in the endpoints section.![Pipeline Endpoint](images/pipeline_endpoint.PNG)
+
+In the below screenshot we can see the pipeline is running
+![Pipeline Running](images/pipeline_running.PNG)
+
+Finally, we can see the details about the completed pipeline along with other details such as rest endpoints
+![Pipeline Endpoint](images/pipeline_endpoints_2.PNG)
+
+
+## Screen Recording
+https://www.youtube.com/watch?v=1DGpRYac2Bo
