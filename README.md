@@ -1,5 +1,7 @@
 # Operationalizing Machine Learning
 
+In this project we are training an AutoML Model and then it is deployed and then consumed. We are using the Bank Marketing Dataset. We are also creating a pipeline the project.
+
 ## Architectural Diagram
 ![Architectural Diagram](images/architecture.PNG)
 
