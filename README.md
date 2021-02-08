@@ -57,6 +57,9 @@ In the below screenshot we can see the pipeline is running
 Finally, we can see the details about the completed pipeline along with other details such as rest endpoints
 ![Pipeline Endpoint](images/pipeline_endpoint_2.PNG)
 
+## Future work
+1. We are using Azure Container Instance (ACI) to deploy the model. We could deploy the model using Azure Kubernetes Instance (AKS) and also compare the deployment time and cost.
+2. We are choosing the best model based on the accuracy but the data that we are using is imbalanced. The Accuracy metric is not ideal for imbalanced dataset. What We could do is understand the business requirement in more detail and choose the right metric.
 
 ## Screen Recording
 https://www.youtube.com/watch?v=1DGpRYac2Bo
