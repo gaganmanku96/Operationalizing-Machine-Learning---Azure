@@ -38,11 +38,11 @@ We can also check the logs after running the logs.py file
 
 ### 4. Swagger
 We'll use the serve.py file to serve json file which contains the schema of the REST API through which the model can be called. We have downloaded the swagger.json file from the deployed model.
-![Swagger UI](images/swagger_ui.PNG)
+![Swagger UI](images/swagger_ui.png)
 
 
 Calling the REST API from Swagger
-![Swagger POST request](images/swagger_response.PNG)
+![Swagger POST request](images/swagger_response.png)
 
 ### 5. Model Endpoint
 After the model has been deployed, we'll use the endpoints.py file to send request to the REST API.
